@@ -45,7 +45,7 @@ main{
 .half-width h2{
     height: 230px;
     width: 485px;
-    font-size: 4em;
+    font-size: 64px;
     color:  #FFFFFF;
     margin-left:156px ;
     margin-top:207px;
@@ -95,11 +95,12 @@ main{
     
 }
 .player {
-    
     width: 330px;
     height: 474px;
     margin-top: 27px;
-    padding: 15px;background: #FFFFFF;
+    padding: 15px;
+    border-radius: 20px;
+    background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
 .player-list img{
@@ -110,4 +111,167 @@ main{
 .player-details{
     
    
+}
+/*-------------------
+  Profile-section
+----------------css*/
+.profile{
+    margin-top: 30px;
+   background-color: antiquewhite;
+   border-radius: 10px;
+   
+}
+#profile-heading{
+    display: inline;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.right-content{
+    width: 23%;
+    margin-left: 90px;
+    display: flex;
+}
+.right-content img{
+    height: 200px;
+    width: 280px;
+    margin-left: 20px;
+}
+.left-content{
+    width: 67%;
+    align-items: center;
+    
+}
+.left-content p{
+    text-align: center;
+}
+.left-content h2{
+    margin-left:20px;
+
+}
+.flex-box{
+    display: flex;
+}
+/*--------------------
+      form section 
+----------------------*/
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* contact section style */
+  .form-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  .banner{
+      float: right;
+  }
+  
+  .banner img{
+      border-radius: 10px;
+  }
+  
+  .row{
+      display: flex;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+    .banner img{
+        height: 500px;
+    }
+  }
+
+
+/*-------------------
+  Footer-section
+----------------css*/
+.social-icon{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 32px;
+}
+.social-icon p{
+    margin-right: 50px;
+}
+footer{
+    text-align: center;
+   
+}
+.logo{
+     height: 110px;
+     width: 484px; 
+     margin-left: 484px;
+     margin-right: 484px;
+     margin-bottom: 112px;
+}
+.copyright p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+/* -----------------
+    Media Quaries 
+--------------------*/
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .middle-section-container{
+        width: 100%;
+    }
+     .players, .player-details {
+        grid-template-columns: repeat(1, 1fr);
+     }
+     .player, .player-list{
+         flex-direction: column;
+     }
+    
+}
+/* Tablate Devices */
+@media only screen and (min-width:680px) and (max-width:992px) {
+    .players, .player-details{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .middle-section-container{
+        width: 100%;
+    }
 }
