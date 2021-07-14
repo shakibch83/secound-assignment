@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+/* ------------
+  common css
+-------------css */
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/*-------------------
+  upper section 
+----------------css*/
+.upper-section{
+    display: flex;
+    background: #2D25A0;
+    height: 633px;
+    width: auto;
+
+border-radius: 0px;   
+}
+.half-width{
+    width: 50%;
+    margin-left: 2%;
+}
+.half-width img{
+    /* position: absolute; */
+    width: 556px;
+    height: 438px;
+    margin-top: 153px;
+    margin-right: 143px;
+    margin: 86px;
+}
+.half-width h2{
+    height: 230px;
+    width: 485px;
+    font-size: 4em;
+    color:  #FFFFFF;
+    margin-left:156px ;
+    margin-top:207px;
+    margin-bottom: 35px;
+    margin-right: 102px;
+
+}
+
+.menu-button{
+    text-decoration: none;
+    background-image: linear-gradient(#a62fff, #28d7ff);
+    color: white;
+    font-weight: 700;
+    height: 44px;
+    width: 168px;
+    margin-left: 156px;
+    margin-bottom: 169px;
+    padding:10px 24px 10px 24px;
+    border-radius: 2px;
+}
+.fas{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+    
+}
+
